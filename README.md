@@ -7,3 +7,4 @@ Week 1 training consist of tasks below:
 - [Hello World](https://github.com/Pranau-R/Training_Week1/issues/3)
 - [Git Installation](https://github.com/Pranau-R/Training_Week1/issues/5)
 - [Git and Linux Commands](https://github.com/Pranau-R/Training_Week1/issues/7)
+
