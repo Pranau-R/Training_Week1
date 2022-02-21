@@ -1,0 +1,997 @@
+
+Pranau@Pranau-T410 MINGW64 ~
+$ pwd
+/c/Users/Pranau
+
+Pranau@Pranau-T410 MINGW64 ~
+$ cd /
+
+Pranau@Pranau-T410 MINGW64 /
+$ pwd
+/
+
+Pranau@Pranau-T410 MINGW64 /
+$ cd home
+bash: cd: home: No such file or directory
+
+Pranau@Pranau-T410 MINGW64 /
+$ pwd
+/
+
+Pranau@Pranau-T410 MINGW64 /
+$ cd /c
+
+Pranau@Pranau-T410 MINGW64 /c
+$ pwd
+/c
+
+Pranau@Pranau-T410 MINGW64 /c
+$ whomi
+bash: whomi: command not found
+
+Pranau@Pranau-T410 MINGW64 /c
+$ whoami
+Pranau
+
+Pranau@Pranau-T410 MINGW64 /c
+$ cd
+
+Pranau@Pranau-T410 MINGW64 ~
+$ whoami
+Pranau
+
+Pranau@Pranau-T410 MINGW64 ~
+$ cd /
+
+Pranau@Pranau-T410 MINGW64 /
+$ whoami
+Pranau
+
+Pranau@Pranau-T410 MINGW64 /
+$ pwd
+/
+
+Pranau@Pranau-T410 MINGW64 /
+$ cd
+
+Pranau@Pranau-T410 MINGW64 ~
+$ pwd
+/c/Users/Pranau
+
+Pranau@Pranau-T410 MINGW64 ~
+$ mkdir /tmp/tutroial
+
+Pranau@Pranau-T410 MINGW64 ~
+$ cd /temp/tutroial
+bash: cd: /temp/tutroial: No such file or directory
+
+Pranau@Pranau-T410 MINGW64 ~
+$ mkdir temp/tutorial
+mkdir: cannot create directory ‘temp/tutorial’: No such file or directory
+
+Pranau@Pranau-T410 MINGW64 ~
+$ mkdir tmp/tutorial
+mkdir: cannot create directory ‘tmp/tutorial’: No such file or directory
+
+Pranau@Pranau-T410 MINGW64 ~
+$ cd
+
+Pranau@Pranau-T410 MINGW64 ~
+$ pwd
+/c/Users/Pranau
+
+Pranau@Pranau-T410 MINGW64 ~
+$ mkdir /temp/tutorial
+mkdir: cannot create directory ‘/temp/tutorial’: No such file or directory
+
+Pranau@Pranau-T410 MINGW64 ~
+$ mkdir /tmp/tutorial
+
+Pranau@Pranau-T410 MINGW64 ~
+$ cd /tmp/tutorial
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mkdir dir1 dir2 dir3
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+dir1/  dir2/  dir3/
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mkdir -p dir4/dir5/dir6
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+dir1/  dir2/  dir3/  dir4/
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cd dir4
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial/dir4
+$ ls
+dir5/
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial/dir4
+$ cd dir5
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial/dir4/dir5
+$ ls
+dir6/
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial/dir4/dir5
+$ cd dir6
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial/dir4/dir5/dir6
+$ ls
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial/dir4/dir5/dir6
+$ cd ../..
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial/dir4
+$ cd ../..
+
+Pranau@Pranau-T410 MINGW64 /tmp
+$ cd tutorial
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mkdir "folder 1"
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mkdir 'folder 2'
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mkdir folder\ 3
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mkdir "folder 4" "folder 5"
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mkdir -p "folder 6"/"folder 7"
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+ dir1/   dir3/  'folder 1'/  'folder 3'/  'folder 5'/
+ dir2/   dir4/  'folder 2'/  'folder 4'/  'folder 6'/
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls > output.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat output.txt
+dir1/
+dir2/
+dir3/
+dir4/
+folder 1/
+folder 2/
+folder 3/
+folder 4/
+folder 5/
+folder 6/
+output.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ echo "This is a test"
+This is a test
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ echo "This is a test" > test_1.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ echo "This is a second test" > test_2.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ echo "This is a third test" > test_3.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+ dir1/   dir3/  'folder 1'/  'folder 3'/  'folder 5'/   output.txt   test_2.txt
+ dir2/   dir4/  'folder 2'/  'folder 4'/  'folder 6'/   test_1.txt   test_3.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t*
+This is a test
+This is a second test
+This is a third test
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* > combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat combined.txt
+This is a test
+This is a second test
+This is a third test
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* > combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat combined.txt
+This is a test
+This is a second test
+This is a third test
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ echo "I've appended a line!" >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+I've appended a line!
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+I've appended a line!
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+I've appended a line!
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ echo "I've appended a line!" >> combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+I've appended a line!
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+I've appended a line!
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ less combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv combined.txt dir1
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+ dir1/   dir3/  'folder 1'/  'folder 3'/  'folder 5'/   output.txt   test_2.txt
+ dir2/   dir4/  'folder 2'/  'folder 4'/  'folder 6'/   test_1.txt   test_3.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls dir1
+combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv combined.txt test_* dir3 dir 2
+mv: target '2' is not a directory
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv combined.txt test_* dir3 dir2
+mv: cannot stat 'combined.txt': No such file or directory
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv dir/* .
+mv: cannot stat 'dir/*': No such file or directory
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv dir1/* .
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv combined.txt test_* dir3 dir2
+mv: cannot stat 'test_*': No such file or directory
+mv: cannot stat 'dir3': No such file or directory
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+ dir1/   dir4/       'folder 2'/  'folder 4'/  'folder 6'/
+ dir2/  'folder 1'/  'folder 3'/  'folder 5'/   output.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls dir2
+combined.txt  dir3/  test_1.txt  test_2.txt  test_3.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv dir2/combined.txt dir4/dir5/dir6
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls  dir2
+dir3/  test_1.txt  test_2.txt  test_3.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls dir4/dir5/dir6
+combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cp dir4/dir5/dir6/combined.txt .
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls dir4/dir5/dir6
+combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+ combined.txt   dir2/  'folder 1'/  'folder 3'/  'folder 5'/   output.txt
+ dir1/          dir4/  'folder 2'/  'folder 4'/  'folder 6'/
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cp combined.txt backup_combined.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+ backup_combined.txt   dir2/       'folder 2'/  'folder 5'/
+ combined.txt          dir4/       'folder 3'/  'folder 6'/
+ dir1/                'folder 1'/  'folder 4'/   output.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cat backup_combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+I've appended a line!
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+I've appended a line!
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv backup_combined.txt combined_backup.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+ combined.txt          dir2/       'folder 2'/  'folder 5'/
+ combined_backup.txt   dir4/       'folder 3'/  'folder 6'/
+ dir1/                'folder 1'/  'folder 4'/   output.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv "folder 1" folder_1
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv "folder 2" folder_2
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv "folder 3" folder_3
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv "folder 4" folder_4
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv "folder 5" folder_5
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ mv "folder 6" folder_6
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+combined.txt         dir1/  dir4/      folder_2/  folder_4/  folder_6/
+combined_backup.txt  dir2/  folder_1/  folder_3/  folder_5/  output.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ pwd
+/tmp/tutorial
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ rm dir4/dir5/dir6/combined.txt combined_backup.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+combined.txt  dir2/  folder_1/  folder_3/  folder_5/  output.txt
+dir1/         dir4/  folder_2/  folder_4/  folder_6/
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls dir2
+dir3/  test_1.txt  test_2.txt  test_3.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ rm folder_*
+rm: cannot remove 'folder_1': Is a directory
+rm: cannot remove 'folder_2': Is a directory
+rm: cannot remove 'folder_3': Is a directory
+rm: cannot remove 'folder_4': Is a directory
+rm: cannot remove 'folder_5': Is a directory
+rm: cannot remove 'folder_6': Is a directory
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ rmdir folder_*
+rmdir: failed to remove 'folder_6': Directory not empty
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ld folder_6
+C:\msys64\mingw64\bin\ld.exe: cannot find folder_6: Permission denied
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ pwd
+/tmp/tutorial
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ rm -r folder_6
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ ls
+combined.txt  dir1/  dir2/  dir4/  output.txt
+
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$
