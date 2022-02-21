@@ -1,0 +1,220 @@
+Pranau@Pranau-T410 MINGW64 /tmp/tutorial
+$ cd /c
+
+Pranau@Pranau-T410 MINGW64 /c
+$ cd git
+bash: cd: git: No such file or directory
+
+Pranau@Pranau-T410 MINGW64 /c
+$ cd git
+bash: cd: git: No such file or directory
+
+Pranau@Pranau-T410 MINGW64 /c
+$ cd e
+bash: cd: e: No such file or directory
+
+Pranau@Pranau-T410 MINGW64 /c
+$ cd /e
+
+Pranau@Pranau-T410 MINGW64 /e
+$ mkdir git
+
+Pranau@Pranau-T410 MINGW64 /e
+$ cd git
+
+Pranau@Pranau-T410 MINGW64 /e/git
+$ mkdir ProjectGit
+
+Pranau@Pranau-T410 MINGW64 /e/git
+$ cd ProjectGit
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit
+$ git config --global user.email "ajaypranauer10@gmail.com"
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit
+$ git config --global user.name "PranauR"
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit
+$ git init
+Initialized empty Git repository in E:/git/ProjectGit/.git/
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ touch testing_1.txt
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ ls
+testing_1.txt
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        testing_1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git add testing_1.txt
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   testing_1.txt
+
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git commit -m "Hello Everyone!"
+[master (root-commit) 1afde6a] Hello Everyone!
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 testing_1.txt
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git clone d:\git\ProjectGit
+Cloning into 'gitProjectGit'...
+fatal: 'd:gitProjectGit' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git clone C:\git\ProjectGit
+Cloning into 'gitProjectGit'...
+fatal: 'C:gitProjectGit' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git clone e:\git\ProjectGit
+Cloning into 'gitProjectGit'...
+warning: You appear to have cloned an empty repository.
+done.
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$
+Display all 3496 possibilities? (y or n)
+!
+./
+2to3
+2to3-3.9
+:
+ACCTRES.dll
+ARP.EXE
+AUDIOKSE.dll
+ActionCenter.dll
+ActionCenterCPL.dll
+ActionQueue.dll
+AdapterTroubleshooter.exe
+AdmTmpl.dll
+AltTab.dll
+AppIdPolicyEngineApi.dll
+Apphlpdm.dll
+AtBroker.exe
+AudioEng.dll
+AudioSes.dll
+AuditNativeSnapIn.dll
+AuditPolicyGPInterop.dll
+AuthFWGP.dll
+AuthFWSnapin.dll
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git remote add origin https://github.com/Pranau-R/Testing_cmdLine
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git push -u origin master
+fatal: helper error (-1): User cancelled dialog.
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
+Username for 'https://github.com': PranauR
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
+Password for 'https://PranauR@github.com':
+
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Pranau-R/Testing_cmdLine/'
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git push -u origin master https://github.com/Pranau-R/Testing_cmdLine.git     fatal: invalid refspec 'https://github.com/Pranau-R/Testing_cmdLine.git'
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (master)
+$ git branch -M main
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$ git push -u origin main
+fatal: An error occurred while sending the request.
+fatal: The request was aborted: Could not create SSL/TLS secure channel.
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/Pranau-R/Testing_cmdLine/'
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$ git push -u origin main
+fatal: An error occurred while sending the request.
+fatal: The request was aborted: Could not create SSL/TLS secure channel.
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Pranau-R/Testing_cmdLine/'
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$ git push -u origin master https://github.com/Pranau-R/Testing_cmdLine.git
+fatal: invalid refspec 'https://github.com/Pranau-R/Testing_cmdLine.git'
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$ git push -u origin master https://github.com/Pranau-R/Testing_cmdLine.git
+fatal: invalid refspec 'https://github.com/Pranau-R/Testing_cmdLine.git'
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$ git push -u origin main
+fatal: An error occurred while sending the request.
+fatal: The request was aborted: Could not create SSL/TLS secure channel.
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Pranau-R/Testing_cmdLine/'
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$ Pranau@10
+bash: Pranau@10: command not found
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$ git push -u origin main
+fatal: helper error (-1): User cancelled dialog.
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
+Username for 'https://github.com':
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
+Password for 'https://github.com':
+
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/Pranau-R/Testing_cmdLine/'
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$ ^C
+
+Pranau@Pranau-T410 MINGW64 /e/git/ProjectGit (main)
+$
